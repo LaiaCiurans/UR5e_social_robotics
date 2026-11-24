@@ -1,0 +1,37 @@
+sequence_name: newmovement
+
+steps:
+  - name: init
+    motion: moveJ
+    joints_deg: [-60, -65, -100, 170, -60, 0]
+    acceleration: 1.2
+    velocity: 0.10
+    time: 4.0
+    blend: 0.0
+
+  - name: one
+    motion: moveL
+    target_xyz_mm: [-350, -250, 400]
+    target_rpy_deg: [0, 0, 90]
+    acceleration: 1.5
+    velocity: 0.15
+    time: 3.0
+    blend: 0.0
+
+  - name: two
+    motion: moveL
+    target_xyz_mm: [-200, -250, 400]
+    target_rpy_deg: [0, 0, 90]
+    acceleration: 1.5
+    velocity: 0.15
+    time: 1.0
+    blend: 0.0
+
+
+  - name: init
+    motion: moveJ
+    joints_deg: [-60, -65, -100, 170, -60, 0]
+    acceleration: 1.2
+    velocity: 0.10
+    time: 3.0
+    blend: 0.0
